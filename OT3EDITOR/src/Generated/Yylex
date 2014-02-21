@@ -1,0 +1,1121 @@
+package Generated;
+// GramGen 1-YyLexer
+import Gently.*;
+import Generated.*;
+%%
+%{
+public LexerState YyState;
+%}
+%integer
+%public
+%%
+"until" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_until;
+}
+"par" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_par;
+}
+"seq" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_seq;
+}
+"onexit" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_onexit;
+}
+"inv" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_inv;
+}
+"onentry" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_onentry;
+}
+"cont" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_cont;
+}
+"assert" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_assert;
+}
+"violates" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_violates;
+}
+"find" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_find;
+}
+"notinv" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_notinv;
+}
+"finished" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_finished;
+}
+"duration" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_duration;
+}
+"at" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_at;
+}
+"prev" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_prev;
+}
+"values" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_values;
+}
+"history" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_history;
+}
+"delta" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_delta;
+}
+"stream" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_stream;
+}
+"wait" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_wait;
+}
+"timestamp" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_timestamp;
+}
+"null" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_null;
+}
+"case" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_case;
+}
+"select" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_select;
+}
+"if" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_if;
+}
+"do" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_do;
+}
+"while" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_while;
+}
+"for" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_for;
+}
+"log" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_log;
+}
+"@>" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__atsign__greater_;
+}
+"<@" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__less__atsign_;
+}
+">>" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__greater__greater_;
+}
+"<<" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__less__less_;
+}
+"!=" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__exclamation__equal_;
+}
+"==" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__equal__equal_;
+}
+"<=" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__less__equal_;
+}
+">=" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__greater__equal_;
+}
+">" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__greater_;
+}
+"<" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__less_;
+}
+"rem" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_rem;
+}
+"mod" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_mod;
+}
+"/" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__slash_;
+}
+"+" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__plus_;
+}
+"now" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_now;
+}
+"getverdict" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_getverdict;
+}
+"not4b" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_not4b;
+}
+"and4b" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_and4b;
+}
+"xor4b" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_xor4b;
+}
+"or4b" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_or4b;
+}
+"not" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_not;
+}
+"and" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_and;
+}
+"xor" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_xor;
+}
+"or" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_or;
+}
+"deactivate" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_deactivate;
+}
+"activate" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_activate;
+}
+"goto" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_goto;
+}
+"label" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_label;
+}
+"interleave" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_interleave;
+}
+"else" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_else;
+}
+"alt" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_alt;
+}
+"action" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_action;
+}
+"setverdict" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_setverdict;
+}
+"continue" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_continue;
+}
+"break" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_break;
+}
+"repeat" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_repeat;
+}
+"stepsize" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_stepsize;
+}
+"extension" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_extension;
+}
+"display" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_display;
+}
+"variant" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_variant;
+}
+"encode" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_encode;
+}
+"override" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_override;
+}
+"with" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_with;
+}
+"present" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_present;
+}
+"char" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_char;
+}
+"error" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_error;
+}
+"none" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_none;
+}
+"inconc" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_inconc;
+}
+"fail" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_fail;
+}
+"pass" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_pass;
+}
+"false" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_false;
+}
+"true" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_true;
+}
+"_xxx_" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__underscore_xxx_underscore_;
+}
+"omit" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_omit;
+}
+"universal" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_universal;
+}
+"configuration" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_configuration;
+}
+"anytype" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_anytype;
+}
+"default" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_default;
+}
+"float" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_float;
+}
+"verdicttype" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_verdicttype;
+}
+"hexstring" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_hexstring;
+}
+"octetstring" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_octetstring;
+}
+"integer" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_integer;
+}
+"charstring" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_charstring;
+}
+"boolean" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_boolean;
+}
+"bitstring" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_bitstring;
+}
+"read" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_read;
+}
+"checkstate" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_checkstate;
+}
+"halt" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_halt;
+}
+"clear" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_clear;
+}
+"timeout" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_timeout;
+}
+"catch" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_catch;
+}
+"check" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_check;
+}
+"getreply" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_getreply;
+}
+"getcall" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_getcall;
+}
+"trigger" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_trigger;
+}
+"sender" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_sender;
+}
+"->" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__minus__greater_;
+}
+"receive" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_receive;
+}
+"raise" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_raise;
+}
+"value" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_value;
+}
+"reply" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_reply;
+}
+"nowait" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_nowait;
+}
+"call" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_call;
+}
+"to" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_to;
+}
+"send" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_send;
+}
+"kill" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_kill;
+}
+"start" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_start;
+}
+"disconnect" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_disconnect;
+}
+"connect" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_connect;
+}
+"running" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_running;
+}
+"any" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_any;
+}
+"killed" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_killed;
+}
+"done" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_done;
+}
+"static" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_static;
+}
+"alive" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_alive;
+}
+"create" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_create;
+}
+"mtc" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_mtc;
+}
+"timer" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_timer;
+}
+"var" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_var;
+}
+"stop" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_stop;
+}
+"control" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_control;
+}
+"external" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_external;
+}
+"recursive" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_recursive;
+}
+"from" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_from;
+}
+"modulepar" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_modulepar;
+}
+"group" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_group;
+}
+"except" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_except;
+}
+"import" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_import;
+}
+"altstep" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_altstep;
+}
+"execute" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_execute;
+}
+"system" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_system;
+}
+"testcase" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_testcase;
+}
+"exception" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_exception;
+}
+"noblock" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_noblock;
+}
+"signature" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_signature;
+}
+"apply" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_apply;
+}
+"self" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_self;
+}
+"on" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_on;
+}
+"runs" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_runs;
+}
+"return" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_return;
+}
+"function" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_function;
+}
+"valueof" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_valueof;
+}
+"match" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_match;
+}
+":" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__colon_;
+}
+"infinity" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_infinity;
+}
+"!" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__exclamation_;
+}
+"permutation" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_permutation;
+}
+"superset" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_superset;
+}
+"subset" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_subset;
+}
+"complement" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_complement;
+}
+"pattern" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_pattern;
+}
+"ifpresent" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_ifpresent;
+}
+"*" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__asterisk_;
+}
+"?" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__question_;
+}
+"]" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__rbracket_;
+}
+"[" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__lbracket_;
+}
+"&" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__ampersand_;
+}
+"modifies" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_modifies;
+}
+"template" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_template;
+}
+"const" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_const;
+}
+":=" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__colon__equal_;
+}
+"." {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__dot_;
+}
+"extends" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_extends;
+}
+"component" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_component;
+}
+"mixed" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_mixed;
+}
+"procedure" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_procedure;
+}
+"all" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_all;
+}
+"inout" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_inout;
+}
+"out" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_out;
+}
+"in" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_in;
+}
+"unmap" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_unmap;
+}
+"param" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_param;
+}
+"map" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_map;
+}
+"realtime" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_realtime;
+}
+"message" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_message;
+}
+"port" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_port;
+}
+"length" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_length;
+}
+".." {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__dot__dot_;
+}
+")" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__rparen_;
+}
+"-" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__minus_;
+}
+"(" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__lparen_;
+}
+"enumerated" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_enumerated;
+}
+"of" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_of;
+}
+"set" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_set;
+}
+"union" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_union;
+}
+"optional" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_optional;
+}
+"address" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_address;
+}
+"record" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_record;
+}
+"type" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_type;
+}
+"friend" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_friend;
+}
+"private" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_private;
+}
+"public" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_public;
+}
+"," {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__comma_;
+}
+"language" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_language;
+}
+";" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__semicolon_;
+}
+"}" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__rbrace_;
+}
+"{" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T__lbrace_;
+}
+"module" {
+   //Gently.GrammarLib.yylval =
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.T_module;
+}
+[A-Za-z][A-Za-z0-9_]* {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.Identifier;
+}
+[0-9]+"."[0-9]*("E"("+"|"-")?[0-9]+)? {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.FLOATVALUE;
+}
+[0-9]+ {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.NUMBER;
+}
+\'(0|1)*\'B {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.BSTRING;
+}
+\'(0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f|A|B|C|D|E|F)*\'H {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.HSTRING;
+}
+\'((0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f|A|B|C|D|E|F)(0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f|A|B|C|D|E|F))*\'O {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.OSTRING;
+}
+\"[^\"]*\" {
+Gently.SemanticActions.Yytext(yytext(), YyState);
+   return YyTokens.CSTRING;
+}
+\r {
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+\n {
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+\  {
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+"//".*\n {
+   // Ignore Comment
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+"//".*\r\n {
+   // Ignore Comment
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+"(@"[^@]*"@)" {
+   // Ignore Comment
+Gently.SemanticActions.Yywhitespace(yytext(), YyState);
+if (Gently.GrammarLib.SignalWhitespace) return Gently.GrammarLib.WhitespaceToken;
+}
+. {
+   // Unmatched
+Gently.SemanticActions.Yyunmatched(yytext(), YyState);
+return Gently.GrammarLib.ErrorToken;
+}
+\n {
+   // Unmatched
+Gently.SemanticActions.Yyunmatched(yytext(), YyState);
+return Gently.GrammarLib.ErrorToken;
+}
+\r {
+   // Unmatched
+Gently.SemanticActions.Yyunmatched(yytext(), YyState);
+return Gently.GrammarLib.ErrorToken;
+}

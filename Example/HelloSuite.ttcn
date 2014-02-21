@@ -1,0 +1,9 @@
+module HelloSuite
+{
+   type component C {}
+
+   testcase HelloWorld() runs on C system C
+   {
+      log("HELLO WORLD")
+   }
+}

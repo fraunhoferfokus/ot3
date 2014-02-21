@@ -1,0 +1,2 @@
+javac CoffeeServer/*.java
+jar cvfm CoffeeServer.jar manifest.txt CoffeeServer/*.class CoffeeServer/drawable/*

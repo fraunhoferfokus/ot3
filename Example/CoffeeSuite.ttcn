@@ -1,0 +1,72 @@
+module CoffeeSuite
+{
+   type port IntegerOutputPortType message { out integer }
+   
+   type port CharstringInputPortType message { in charstring }
+
+   type component EmptyComponent {}
+
+   type component CoffeeDrinkerComponentType
+   {
+      port CharstringInputPortType InputPort;
+      port IntegerOutputPortType OutputPort;
+   }
+
+   function CoffeeDrinkerFunction()
+      runs on CoffeeDrinkerComponentType
+   {
+      var integer Count;
+
+      timer t;
+      var integer i; 
+
+      OutputPort.send(100);
+
+      Count := 0;
+
+      t.start(10.0);
+      alt {
+         [] InputPort.receive(charstring:"coffee") {
+            log("RECEIVED COFFEE");
+            Count := Count+1;
+            repeat;
+         }
+         [] t.timeout {
+         }
+      }
+      if (Count == 2) {
+         setverdict(pass);
+      }
+      else {
+         setverdict(fail);
+      }   
+   }
+
+   type component EmptyComponentType {}
+ 
+
+   testcase TwoCoffeesPlease ()
+      runs on EmptyComponentType
+      system CoffeeDrinkerComponentType
+      
+   {
+      var CoffeeDrinkerComponentType CoffeeDrinker;
+
+      CoffeeDrinker := CoffeeDrinkerComponentType.create;
+
+      map(CoffeeDrinker:OutputPort, system:OutputPort);
+      map(CoffeeDrinker:InputPort, system:InputPort);
+
+      CoffeeDrinker.start( CoffeeDrinkerFunction() );
+
+      CoffeeDrinker.done;
+
+      unmap(CoffeeDrinker:OutputPort, system:OutputPort);
+      unmap(CoffeeDrinker:InputPort, system:InputPort);
+   }
+   
+   
+   control {
+      execute( TwoCoffeesPlease() );
+   }
+}

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+CYAN=../../
+BOX=$CYAN/boot/neueschachtel
+PACK=$BOX/domino/Gently
+
+rm -rf $PACK
+mkdir $PACK
+# cp *.java $PACK
+cp *.class $PACK
+
+cd $PACK
+echo NOW IN `pwd`
+ls

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/anim_black" android:oneshot="true">
+        <item android:drawable="@drawable/coffee1" android:duration="300" />
+        <item android:drawable="@drawable/coffee2" android:duration="300" />
+        <item android:drawable="@drawable/coffee3" android:duration="300" />
+        <item android:drawable="@drawable/coffee4" android:duration="300" />
+        <item android:drawable="@drawable/coffee5" android:duration="300" />
+        <item android:drawable="@drawable/coffee6" android:duration="300" />
+        <item android:drawable="@drawable/coffee7" android:duration="300" />
+        <item android:drawable="@drawable/coffee8" android:duration="300" />
+        <item android:drawable="@drawable/coffee9" android:duration="300" />
+     </animation-list>
